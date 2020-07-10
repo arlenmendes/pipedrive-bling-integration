@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use('', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: 'API to Pipedrive and Bling integration' });
 });
 
